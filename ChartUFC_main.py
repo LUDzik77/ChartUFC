@@ -17,8 +17,7 @@ def country_info(chosen_country):
       perc_fighters_for(chosen_country)
       perc_victories_for(chosen_country)
       locality_for(chosen_country)
-      weightclass_for(chosen_country)
-         
+      weightclass_for(chosen_country)  
       #second page:   
       important_fighters_for(chosen_country)     
       #third page:

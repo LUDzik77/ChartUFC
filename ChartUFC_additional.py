@@ -6,7 +6,6 @@ import matplotlib.image as mpimg
 from datetime import datetime
 import matplotlib.cbook as cbook
 
-
 UFC_fights = pd.read_csv("ALL UFC FIGHTS 2_23_2016 SHERDOG.COM - Sheet1.csv")
 UFC_people = pd.read_csv("ALL UFC FIGHTERS 2_23_2016 SHERDOG.COM - Sheet1.csv")
 UFC_people.drop_duplicates(subset ="fid", keep = "first", inplace = True)
@@ -132,10 +131,6 @@ def locality_for(chosen_country):
 
 
 def important_fighters_for(chosen_country):
-    
-    #fig = plt.figure(figsize=(9.6, 7.2))
-    #fig.canvas.set_window_title(f'{chosen_country} in the UFC (part1)')    
-    
     my_fighters = UFC_people[UFC_people["country"] == chosen_country]
     my_fighters2 = fighters_records.loc[my_fighters["fid"]]
     my_fighters3 = my_fighters2.loc[(my_fighters2["fights"] > 1) & (my_fighters2["ratio"] >49)]
@@ -201,8 +196,7 @@ def age_distribution_for(chosen_country):
     grey_patch = mpatches.Patch(color="grey", label="world")
     plt.legend(handles=[grey_patch]) 
     #plt.show() 
-    #https://www.youtube.com/watch?v=XDv6T4a0RNc&t=824s
-
+    
 
 #for later use
 def get_photo():
