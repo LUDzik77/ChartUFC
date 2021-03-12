@@ -19,7 +19,7 @@ I want to add other querries:
 For now data is outdated (2016) as I am using a csv i found somewhere in the deep abbys of the net :)
 
 ```diff 
-+I am planning to write my own web scraping tool so the app will run data updates from www.sherdog.com on its own.
++I am planning to write my own web scraping tool so the app will run updates from the site on its own.
 ```
 
 ## Technology
